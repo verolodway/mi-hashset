@@ -18,6 +18,19 @@ public class MiHashSet
     }
     
     /**
+     * Método que añade un elemento al conjunto si no estaba.
+     * Devuelve verdadero en caso de que el elemento no estuviera presente y falso en el caso contrario.
+     */
+    public boolean add(int elemento){
+        boolean presente = true;
+        if(elementos.contains(elemento)){
+            presente = false;
+        }
+        elementos.add(elemento);
+        return presente;
+    }
+    
+    /**
      * Método que nos permite vaciar el conjunto. 
      */
     public void clear(){
