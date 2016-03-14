@@ -63,20 +63,28 @@ public class MiHashSet
     }
     
     /**
-    *Método que elimina del conjunto el elemento dado. 
-    *Si no existiera devuelve falso; si existía en el conjunto devuelve verdadero.
+    * Método que elimina del conjunto el elemento dado. 
+    * Si no existiera devuelve falso; si existía en el conjunto devuelve verdadero.
     */
     public boolean remove(int elemento)
     {
        boolean existe = false;
        if(elementos.contains(elemento))
-       {
-    		int index = elementos.indexOf(elemento);  
+       { 
             elementos.remove(elemento);
             existe = true;
         }
        return existe;
     }
     
-    
+    /**
+     * Método que devuelve una cadena conteniendo todos los elementos del conjunto separados por comas y entre corchetes.
+     */
+    public String toString(){
+        String lista = null;
+        for (int i = 0; i < elementos.size(); i++){
+            lista += ("["+ elementos.get(i) + "]" + ", ");
+        }
+        return lista;
+    }
 }
