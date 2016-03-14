@@ -23,4 +23,12 @@ public class MiHashSet
     public void clear(){
         elementos = new ArrayListInt();
     }
+    
+    /** 
+    * Devuelve true si el conjunto contiene el elemento dado.
+    */
+    public boolean contains(int elemento)   
+    {
+      return elementos.contains(elemento);    
+    }
 }
