@@ -31,4 +31,13 @@ public class MiHashSet
     {
       return elementos.contains(elemento);    
     }
+    
+    /**
+    * Devuelve true si el conjunto está vacío
+    */
+  
+    public boolean isEmpty()
+    {
+      return elementos.size() == 0;
+    }
 }
