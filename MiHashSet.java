@@ -7,27 +7,20 @@
  */
 public class MiHashSet
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private ArrayListInt elementos;
 
     /**
      * Constructor for objects of class MiHashSet
      */
     public MiHashSet()
     {
-        // initialise instance variables
-        x = 0;
+        elementos = new ArrayListInt();
     }
-
+    
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * Método que nos permite vaciar el conjunto. 
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void clear(){
+        elementos = new ArrayListInt();
     }
 }
