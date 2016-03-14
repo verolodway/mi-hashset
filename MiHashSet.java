@@ -40,4 +40,12 @@ public class MiHashSet
     {
       return elementos.size() == 0;
     }
+    
+    /**
+    * Devuelve el número de elementos del conjunto.    
+    */
+    public int size()
+    {
+        return elementos.size();
+    }
 }
